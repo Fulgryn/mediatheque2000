@@ -1,0 +1,108 @@
+h1{
+    padding:5px 20px;
+    background-color: #060;
+}
+
+.main {
+    max-width: 500px;
+    margin: auto;
+    background-color: #333;
+}
+
+.inscription {
+    margin: 10px auto;
+    max-width: 400px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    font-size: 13px;
+}
+
+.inscription div {
+    padding: 0;
+    display: block;
+    margin: 10px 0 ;
+}
+
+.inscription label {
+    margin: 0 0 3px 0;
+    padding: 0px;
+    display: block;
+    font-weight: bold;
+}
+
+.inscription input,
+select {
+    box-sizing: border-box;
+    border: 1px solid #BEBEBE;
+    padding: 7px;
+    margin: 0px;
+    outline: none;
+}
+
+.inscription input:focus,
+.inscription select:focus {
+    box-shadow: 0 0 8px #00FF00;
+    border: 1px solid #00FF00;
+}
+
+.inscription div .large {
+    width: 100%;
+}
+
+.radio-div {
+    width: 70%;
+    float: left;
+    clear: none;
+}
+
+label.radio {
+    float: left;
+    clear: none;
+    display: block;
+    padding: 0 1em;
+    width: 25%;
+}
+
+input[type=radio],
+input.radio {
+    float: left;
+    clear: none;
+    margin: 2px 0 0 2px;
+}
+
+.check-div {
+    float: left;
+    clear: none;
+    margin: 10% 0;
+}
+
+label.check {
+    float: left;
+    clear: none;
+    display: block;
+    padding: 0 1em;
+}
+
+input[type=check],
+input.check {
+    float: left;
+    clear: none;
+    margin: 2px 0 0 2px;
+}
+
+label.fix {
+    float: left;
+    width: 100%;
+}
+
+button {
+    background-color: #060;
+    border: none;
+    color: white;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px; 
+}

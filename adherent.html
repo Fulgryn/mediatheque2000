@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Médiathèque</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="form.css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li> <a href="index.html">Accueil</a></li>
+                <li class="active"> <a href=#>Adhérents</a></li>
+                <li><a href=#>Bibliothèque</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Ajout d'un nouveau membre</h1>
+    <div class="main">
+        <form class="inscription">
+            <div>
+                <label for="prenom">Prénom</label>
+                <input type="text" name="prenom" id="prenom" class="large" autofocus required/>
+            </div>
+            <div>
+                <label for="nom">Nom</label>
+                <input type="text" name="nom" id="nom" class="large" required/>
+            </div>
+            <div>
+                <label for="dateNaissance">Date de naissance</label>
+                <input type="date" name="dateNaissance" class="large" id="dateNaissance" />
+            </div>
+            <div>
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" class="large" required/>
+            </div>
+            <div>
+                <label for="telephone">Téléphone</label>
+                <input type="tel" name="telephone" id="telephone" maxlength="10" pattern="[0-9]{10}" class="large" required/>
+            </div>
+            <div class="radio-div">
+                <label class="fix">Préférence de contact</label>
+                <input type="radio" class="radio" id="contactChoice1" name="contact" value="email" required/>
+                <label for="contactChoice1" class="radio">Email</label>
+                <input type="radio" class="radio" id="contactChoice2" name="contact" value="telephone" required/>
+                <label for="contactChoice2" class="radio">Téléphone</label>
+            </div>
+            <div class="check-div">
+                <label class="fix">Services souscrits</label>
+                <input class="check" type="checkbox" id="service1" name="services" value="animations">
+                <label class="check" for="service1">Animations</label>
+                <input class="check" type="checkbox" id="service2" name="services" value="spectacles">
+                <label class="check" for="service2">Spectacles</label>
+                <input class="check" type="checkbox" id="service3" name="services" value="emprunts">
+                <label class="check" for="service3">Emprunts illimités</label>
+            </div>
+            <div>
+                <label class="fix">Code de parrainage</label>
+                <input type="number" value="10" name="codeParainnage" class="large" />
+            </div>
+            <div>
+                <label for="pays">Pays</label>
+                <select name="pays" id="pays" class="large">
+                    <optgroup label="Europe">
+						<option value="DE">Allemagne</option> 
+						<option value="EN">Angleterre</option>				  	
+					  	<option value="FR" selected="selected">France</option>
+				  	</optgroup>				  	
+				  	<optgroup label="Amériques">
+					  	<option value="CA">Canada</option>
+					  	<option value="US">Etats-Unis</option>
+					  	<option value="ME">Mexique</option>
+				  	</optgroup>
+				  	<optgroup label="Asie">
+					  	<option value="CH">Chine</option>
+					  	<option value="KO">Corée</option>
+					  	<option value="JA">Japon</option>
+				  	</optgroup>
+                </select >
+            </div>
+            <div class="radio-div">
+				<label>VIP</label>
+				<input type="radio" class="radio" name="vip" value="oui" disabled="disabled"/>
+				<label class="radio">Oui</label>
+
+    			<input type="radio" class="radio" name="vip" value="non" disabled="disabled" checked/>
+    			<label class="radio">Non</label>
+			</div>
+            <div>
+				<button type="submit">Envoyer</button>
+			</div>
+        </form>
+    </div>
+    <footer>
+        <p class="footer">Médiatèque2000&#8482; by <a href="https://twitter.com/Fulgryn" class="links">@Fulgryn</a> 2018 Tout droits réservés</p>
+    </footer>
+</body>
+</html>
